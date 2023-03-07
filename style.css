@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #555;
+    scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background-color: #7775;
+  }
+  
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background-color: #5555;
+  }
+  
+  html::-webkit-scrollbar-track:hover {
+    background-color: #5554;
+  }
+
+/*nav*/
+nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: #000;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 10000;
+}
+
+nav img{
+    position: relative;
+    bottom: 10px;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 20px 50px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: #FEBC58;
+    font-size: 1.3rem;
+  }
+
+nav span{
+    color: #FEBC58;
+}
+
+/*Hero*/
+
+#hero{
+    height: 100vh;
+}
+
+.hero-container{
+    padding-top: 150px;
+    margin-left: 150px;
+    height: 200px;
+    width: 600px;
+}
+
+.titulo{
+    font-size: 3.5rem;
+}
+
+.titulo span{
+    color: #FEBC58;
+}
+
+.text{
+    position: relative;
+    color: #FEBC58;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.container .text.first-text{
+    color: #FFF;
+}
+
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border-left: 2px solid #FEBC58;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.descrip{
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.descrip a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: .8px;
+    color: #fff;
+    padding: 15px 15px;
+    margin-left: 40px;
+    background-color: #FEBC58;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+
+
+.descrip a:hover{
+    background: rgba(255, 255, 255, .30);
+    backdrop-filter: blur(2px);
+}
+
+.candado{
+    height: 600px;
+    width: 600px;
+    object-fit: contain;
+    position: absolute;
+    left: 800px;
+    bottom: 20px;
+    rotate: 2.2deg;
+    transform: translateY(0px);
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float{
+  0%{
+    transform: translatey(0px);
+  }
+  
+  50%{
+    transform: translatey(-17px);
+  }
+
+  100%{
+    transform: translatey(0px);
+  }
+}
+
+.custom-shape-divider-bottom-1676433436 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676433436 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1676433436 .shape-fill {
+    fill: #FEBC58;
+}
+
+/*servicios*/
+
+#servicios{
+    background: #FEBC58;
+}
+
+.servicios-container{
+    padding-top: 100px;
+    padding-left: 125px;
+    margin-left: 70px;
+}
+
+.servicios-container h2{
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
+    width: 350px;
+    height: 310px;
+    background:#202227;
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    margin: 30px 10px;
+    transition: .5s;
+}
+
+.card-1,.card-3{
+    position: relative;
+    top: 160px;
+}
+
+.card-4,.card-6{
+    position: relative;
+    bottom: 160px;
+}
+
+.card-1,.card-4{
+    right: 50px;
+}
+
+.card-3,.card-6{
+    left: 50px;
+}
+
+.card-3{
+    margin-right: 80px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-right: 170px;
+}
+
+.center img{
+    height: 450px;
+    rotate: 10deg;
+}
+
+.card-icon{
+    padding-left: 110px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.card-content{
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    transition: 1s;
+}
+
+.card-content p{
+    padding-top: 15px;
+    padding-left: 8px;
+}
+
+.card-content h3{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-shape-divider-top-1676857437 {
+    position: relative;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1676857437 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1676857437 .shape-fill {
+    fill: #FEBC58;
+}
+
+.opiniones-container{
+    padding-top: 150px;
+    background: #000;
+}
+
+.opiniones-container h2{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.opinion-card-1,.opinion-card-2,.opinion-card-3{
+    display: inline-flex;
+    flex-direction: column;
+    width: 350px;
+    height: 280px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    margin-left: 30px;
+    background: #202227;
+    border: 1px solid rgba(255, 255, 255, .18);
+}
+
+.opinion-card-1{
+    margin-left: 60px;
+}
+
+.opinion-card-1 h3,.opinion-card-2 h3,.opinion-card-3 h3{
+    position: relative;
+    bottom: 70px;
+    left: 100px;
+    letter-spacing: 1px;
+}
+
+.avatar,.avatar-2,.avatar-3{
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    padding: 20px;
+    padding-left: 5px;
+    object-fit: cover;
+}
+
+.opinion{
+    font-size: 1.2rem;
+}
+
+.opiniones-container span{
+    color: #FEBC58;
+}
+
+/**nosotros**/
+
+.nosotros-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.nosotros-content{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    margin-left: 100px;
+    background: #202227;
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 30px;
+    height: 50vh;
+    width: 60vw;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+}
+
+.nosotros-text{
+    padding: 40px;
+    position: relative;
+    right: 50px;
+}
+
+.nosotros-text h2{
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    color: #FEBC58;
+}
+
+.nosotros-text p{
+    font-size: 1.2rem;
+    padding-bottom: 40px;
+    width: 460px;
+}
+
+.nosotros-text a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: .8px;
+    color: #fff;
+    padding: 15px 15px;
+    background: #FEBC58;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.nosotros-text a:hover{
+    background: rgba(255, 255, 255, .30);
+    backdrop-filter: blur(2px);
+}
+
+.logo-empresa{
+    background: #FEBC58;
+    border-radius: 20px;
+    height: 270px;
+    width: 390px;
+    position: relative;
+    top: 50px;
+    right: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.tarjetas-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.about-card{
+    position: relative;
+    width: 330px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgb(0, 0,0,0.5 );
+    border-radius: 15px;
+    background: #202227;
+    overflow: -moz-hidden-unscrollable;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+
+.about-card .tarjetas{
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: default;
+}
+
+
+
+.tarjetas h3{
+    font-size: 1.8em;
+    color: #FEBC58;
+    
+}
+
+.tarjetas p{
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    
+}
+
+/*contacto*/
+
+.contact-section{
+    background-size: cover;
+    padding: 40px 0;
+    margin-top: 65px;
+    margin-bottom: 30px;
+  }
+  .contact-section h1{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #FEBC58;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .div-contact-form-btn{
+    display: flex;
+    justify-content: center;
+  }
+  .contact-form-btn{
+    border: 0;
+    background: #FEBC58;
+    color: #fff;
+    padding: 12px 40px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: 15px;
+  }
+  .contact-form-btn:hover{
+    background: rgba(255, 255, 255, .30);
+    backdrop-filter: blur(2px);
+}
+
+/*footer*/
+.pie-pagina{
+    width: 100%;
+    position: absolute;
+    background-color: #FEBC58;
+    left: 0;
+    align-items: flex-end;
+  }
+  
+  
+  .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+  }
+  .pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  
+  
+  .pie-pagina .grupo-2{
+    padding: 20px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .pie-pagina .grupo-2 small{
+    font-size: 1.2rem;
+  }
+  
+  .footer-menu li{
+    list-style: none; 
+  
+  }
+  
+  .footer-menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  .footer-menu li a:hover{
+    color: #FF6836;
+    transition: .5s;
+    
+  }
+  
+  .contact-info div{
+    margin-right: 15px;
+    padding: 2px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    display: flex;
+  }
+  
+  .contact-info i{
+      color: #FEBC58;
+      margin-right: 12px;
+      font-size: 25px;
+  }
